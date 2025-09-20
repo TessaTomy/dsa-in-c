@@ -66,9 +66,6 @@ void create()
     }
 }
 
-
-
-
 void insertNode()
 {
 	int pos;
@@ -130,6 +127,21 @@ void del()
 	}
 }
 
+void search() {
+    int key;
+    printf("Enter value to search: ");
+    scanf("%d", &key);
+
+    int pos = 1;
+    for (node temp = start; temp != NULL; temp = temp->next, pos++) {
+        if (temp->data == key) {
+            printf("Element %d found at position %d\n", key, pos);
+            return;
+        }
+    }
+    printf("Element %d not found in the list\n", key);
+}
+
 void freeall()
 {
     node next=start,p;
@@ -144,7 +156,7 @@ void main() {
     while (1)
     {
 	int choice;
-	printf("\n=========================\nEnter Your Choice : \n1.Create\n2.Insert\n3.Delete\n4.Travserse\n5.Count\n6.Exit\n?:");
+	printf("\n=========================\nEnter Your Choice : \n1.Create\n2.Insert\n3.Delete\n4.Travserse\n5.Count\n6.Search\n7.Exit\n?:");
 	scanf("%d",&choice);
 	switch(choice)
 	{
@@ -158,7 +170,9 @@ void main() {
 		    break;
 	    case 5: printf("Total number of nodes = %d",count);
 		    break;
-	    case 6: freeall();
+		case 6: search();
+        	break;
+	    case 7: freeall();
 	        return;
 	}
     }
