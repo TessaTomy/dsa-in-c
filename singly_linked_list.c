@@ -128,6 +128,11 @@ void del()
 }
 
 void search() {
+	if(!start)
+	{
+		printf("Linked List is Empty !!");
+		return;
+	}
     int key;
     printf("Enter value to search: ");
     scanf("%d", &key);
