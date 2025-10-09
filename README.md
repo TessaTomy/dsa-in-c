@@ -15,5 +15,6 @@ _A personal archive of core data structures and algorithms — written in C, sha
 - **Bit Manipulation** — Set Creation, Union, Intersection, Full Set Operations  
 - **Expression Conversion** — Infix → Postfix, Infix → Prefix  
 - **Disjoint Set** — Union-Find with Path Compression  
-- **Graphs** — Adjacency Matrix & List; BFS & DFS (Matrix + List-based); MST: Prim’s (Matrix); Kruskal’s — next in line  
+- **Graphs** — Adjacency Matrix & List; BFS & DFS (Matrix + List-based); MST: Prim’s (Matrix); Kruskal’s — next in line
+- **Shortest Paths** — Floyd-Warshall (All-Pairs, Matrix-based) 
 ---
